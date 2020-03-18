@@ -131,14 +131,15 @@ As depicted in this image:
 
 > ![](images/OpenSshTarget.png)
 
-To add a new project target:
-1. Connect to the top level target you have, it should put you in your home folder.
-2. Try running this in the VSCode terminal:
-  ```
+To add a new project target; connect to the top level target you have, it should put you in your home folder, then try running this in the VSCode terminal:
+
+```
   mkdir foo
   code foo
-  ```
-3. You will now have `~/foo` as a target in the SSH Targets explorer sidebar
+```
+> Note, if you may be using `code-insiders` instead of `code`
+
+You will now have `~/foo` as a target in the SSH Targets explorer sidebar
 
 ### Declare port forwarding for your applications
 
