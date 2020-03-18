@@ -6,8 +6,8 @@
   + [Step 1. Install virtual box](#step-1-install-virtual-box)
   + [Step 2. Download a linux ISO](#step-2-download-a-linux-iso)
   + [Step 3. Create a VM for development](#step-3-create-a-vm-for-development)
-  + [Step 3. Configure SSH access](#step-3-configure-ssh-access)
-  + [Step 4. Setup your VM for development](#step-4-setup-your-vm-for-development)
+  + [Step 4. Configure SSH access](#step-4-configure-ssh-access)
+  + [Step 5. Setup your VM for development](#step-5-setup-your-vm-for-development)
 + [Bonus tweaks](#bonus-tweaks)
     + [Declare port forwarding for your applications](#declare-port-forwarding-for-your-applications)
 
@@ -29,7 +29,7 @@
 Install from https://www.virtualbox.org/wiki/Downloads
 
 1. Select the **Windows Host** option.
-   ![](images/DownloadVBox.png)
+> ![](images/DownloadVBox.png)
 2. Install virtual box, following the prompts.
 
 ### Step 2. Download a linux ISO
@@ -73,7 +73,7 @@ Its up to you what linux distro you'd like to use. Here are a few options.
 16. We are forwarding port `22` from the guest to `22922` on the host. When SSH'ing to your VM, you will use port `22922`
 
   
-### Step 3. Configure SSH access
+### Step 4. Configure SSH access
 
 1. Open VSCode and install the `SSH: Remote` extension
    - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
@@ -107,7 +107,7 @@ Its up to you what linux distro you'd like to use. Here are a few options.
 12. Inside your VM create a `~/.ssh/authorized_keys` file and paste the contents of the `id_rsa.pub`. You can do this via SSH Remote or try a regular SSH session. You likely won't be able to copy paste content in the Virtual Box guest GUI because it requires "Guest additions" to be installed first.
 13. Once this is done, you will no longer be prompted for a password upon connecting
 
-### Step 4. Setup your VM for development
+### Step 5. Setup your VM for development
 
 Depending on your distro of choice, you'll have to install development related dependencies, but you should be able to discover what they are if you get an error during normal use.
 
