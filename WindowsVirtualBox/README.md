@@ -30,7 +30,6 @@
 Install from https://www.virtualbox.org/wiki/Downloads
 
 1. Select the **Windows Host** option.
-> ![](images/DownloadVBox.png)
 2. Install virtual box, following the prompts.
 
 ### Step 2. Download a linux ISO
