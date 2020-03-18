@@ -14,6 +14,7 @@
 ## Prerequisites
 
 - Windows 10, with OpenSSH installed
+  - OpenSSH should come installed in later builds
 - WSL/Hyper V disabled.
   - Virtual Box should ask you to do this, and tell you how to, if necessary.
 
