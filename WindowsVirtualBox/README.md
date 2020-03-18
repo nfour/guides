@@ -9,7 +9,8 @@
   + [Step 4. Configure SSH access](#step-4-configure-ssh-access)
   + [Step 5. Setup your VM for development](#step-5-setup-your-vm-for-development)
 + [Bonus tweaks](#bonus-tweaks)
-    + [Declare port forwarding for your applications](#declare-port-forwarding-for-your-applications)
+  + [Configure SSH Remote projects](#configure-ssh-remote-projects)
+  + [Declare port forwarding for your applications](#declare-port-forwarding-for-your-applications)
 
 ## Outline
 
@@ -124,7 +125,22 @@ Depending on your distro of choice, you'll have to install development related d
 
 ## Bonus tweaks
 
-#### Declare port forwarding for your applications
+### Configure SSH Remote projects
+
+As depicted in this image:
+
+> ![](images/OpenSshTarget.png)
+
+To add a new project target:
+1. Connect to the top level target you have, it should put you in your home folder.
+2. Try running this in the VSCode terminal:
+  ```
+  mkdir foo
+  code foo
+  ```
+3. You will now have `~/foo` as a target in the SSH Targets explorer sidebar
+
+### Declare port forwarding for your applications
 
 In your ssh config you can tell VSCode's SSH Remote to automatically forward ports from your VM to your host.
 
