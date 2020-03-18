@@ -1,6 +1,5 @@
 # How to set up a development VM on windows
 
-+ [Outline](#outline)
 + [Prerequisites](#prerequisites)
 + [Steps](#steps)
   + [Step 1. Install virtual box](#step-1-install-virtual-box)
@@ -12,14 +11,9 @@
   + [Configure SSH Remote projects](#configure-ssh-remote-projects)
   + [Declare port forwarding for your applications](#declare-port-forwarding-for-your-applications)
 
-## Outline
-
-- Use `virtual-box` to run a linux virtual machine for development
-- Configure VSCode to connect to it via the `SSH: Remote` extension
-
 ## Prerequisites
 
-- Windows 10
+- Windows 10, with OpenSSH installed
 - WSL/Hyper V disabled.
   - Virtual Box should ask you to do this, and tell you how to, if necessary.
 
@@ -49,11 +43,11 @@ Its up to you what linux distro you'd like to use. Here are a few options.
 2. Select the "**Expert Mode**" down the bottom, to see this view:
 > ![](images/ConfigureNewVM.png)
 3. Make sure to give it enough RAM, usually **8-16gb** is enough
-4. Ensure "**Create a virtual hard disk now** is selected, then click **Create**
+4. Ensure **Create a virtual hard disk now** is selected, then click **Create**
 5. Create your virtual disk as configured:
 > ![](images/CreateVDisk.png)
-6. You'll want to select **Dynamically Allocated** and set your size to about **100gb**. You can increase the size any time later. Click **Create**.
-7. Now, configure your newly created VM. Click **Settings** as below:
+6. You'll want to select **Dynamically Allocated** and set your size to about **100gb**. You can increase the size, any time, but be aware you cannot shrink it. Click **Create**.
+7. Now, configure your newly created VM. Click **Settings**:
 > ![](images/ConfigureVMDropdown.png)
 8. Navigate to **Storage** then click **Empty** under **Controller: IDE**. Check the **Live CD/DVD** box, then click the **blue disk icon**. Select your downloaded .iso.
 > ![](images/ChooseDisk.png)
